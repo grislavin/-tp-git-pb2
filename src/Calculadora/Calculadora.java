@@ -1,6 +1,7 @@
+package Calculadora;
 import java.util.Scanner;
 
-public class CalculadoraGri {
+public class Calculadora {
 
 	public static void main(String[] args) {
 		Integer a;
