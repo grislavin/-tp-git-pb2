@@ -8,7 +8,7 @@ public class Calculadora {
 		Integer b;
 		Integer opcion;
 		Integer resultado;
-//commit test - test 2
+//commit test - master
 		Scanner teclado = new Scanner(System.in);
 
 		do {
