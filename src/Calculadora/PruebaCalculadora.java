@@ -10,8 +10,7 @@ public class PruebaCalculadora {
 		Integer b;
 		// branch switch 2  
 		Scanner teclado = new Scanner(System.in);
-		
-		
+	
 		
 		System.out.println("Ingrese su operación /n 1 para sumar /n 2 pararestar /n 3 para multiplicar /n 4 para dividir");
 		opcion = teclado.nextInt();
