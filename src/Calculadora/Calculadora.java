@@ -2,13 +2,13 @@ package Calculadora;
 import java.util.Scanner;
 
 public class Calculadora {
-
+	//commit test - develop if
 	public static void main(String[] args) {
 		Integer a;
 		Integer b;
 		Integer opcion;
 		Integer resultado;
-//commit test - master if
+
 		Scanner teclado = new Scanner(System.in);
 
 		do {
