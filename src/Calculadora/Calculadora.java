@@ -2,32 +2,36 @@ package Calculadora;
 import java.util.Scanner;
 
 public class Calculadora {
-
-	public static void main(String[] args) {
-		Integer a;
-		Integer b;
+	//commit test - master lavin
+		Double a;
+		Double b;
 		Integer opcion;
-		Integer resultado;
-//commit test - master if
-		Scanner teclado = new Scanner(System.in);
+		Double resultado;
 
-		do {
-			System.out.println("Ingrese su operación /n 1 para sumar /n 2 pararestar /n 3 para multiplicar /n 4 para dividir");
-			opcion = teclado.nextInt();
-		} while (opcion < 1 && opcion > 4);
-		System.out.println("Ingrese el primer numero");
-		a = teclado.nextInt();
-		System.out.println("Ingrese el segundo numero");
-		b = teclado.nextInt();
-		if (opcion.equals(1)) {
-			resultado = a + b;
-		} else if (opcion.equals(2)) {
-			resultado = a - b;
-		} else if (opcion.equals(3)) {
-			resultado = a * b;
-		} else {
-			resultado = a / b;
+		Scanner teclado = new Scanner(System.in);
+		
+		public void leerNumeros () {
+			System.out.println("Ingrese el primer numero");
+			a = teclado.nextDouble();
+			System.out.println("Ingrese el segundo numero");
+			b = teclado.nextDouble();
 		}
-		System.out.println("El resultado es " + resultado.toString());
+		
+		public void sumar () {
+			resultado = a + b;
+			System.out.println("El resultado es: " + resultado);
+		}
+		public void restar () {
+			resultado = a - b;
+			System.out.println("El resultado es: " + resultado);
+		}
+		public void multlipicar () {
+			resultado = a * b;
+			System.out.println("El resultado es: " + resultado);
+		}
+		public void dividir () {
+			resultado = a / b;
+			System.out.println("El resultado es: " + resultado);
+		}
+
 	}
-}
