@@ -1,0 +1,29 @@
+5-
+¿Qué sucedió cuando se intento hacer el segundo push?
+Devuelve mensaje: "master rejected non fast forward eclipse git"
+
+¿Qué acciones hay que tomar antes de realizar el push?
+git fetch origin
+git merge origin/master
+git push origin master
+
+¿Qué estrategia propondrían para evitar esta situación?
+
+Debería crearse una rama sobre la cual trabajar con la nueva versión.
+
+6- En el repositorio local ejecutar el siguiente comando git checkout -b develop
+¿Qué acción realiza el parámetro -b?
+Crea una nueva rama y nos ubica en ella.
+
+9- Realizar en el repositorio remoto un merge request
+¿Qué diferencias notaron en el proceso?
+¿Qué estrategia utilizarían para evitar conflictos?
+
+
+Las diferencias que notamos en el proceso fue la fusion de las clases Calculadoras
+que se encontraban en el repositorio local de cada uno. Al realizar el merge request se unificaron los metodos realizados en dichas clases, en  una sola.
+
+Las estrategia que utilizariamos para evitar estos conflictos son:
+-Tratar de comprender de manera de total lo solicitado
+-No utilizar ramas innecesarias
+
