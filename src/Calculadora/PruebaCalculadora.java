@@ -5,13 +5,12 @@ public class PruebaCalculadora {
 
 	public static void main(String[] args) {
 		Integer opcion;
-		Integer resultado=null;
+		Integer resultado=0;
 		Integer a;
 		Integer b;
 		// branch switch 2  
 		Scanner teclado = new Scanner(System.in);
-		
-		
+	
 		
 		System.out.println("Ingrese su operación /n 1 para sumar /n 2 pararestar /n 3 para multiplicar /n 4 para dividir");
 		opcion = teclado.nextInt();
@@ -23,19 +22,19 @@ public class PruebaCalculadora {
 		
 		}
 		while(opcion < 1 && opcion > 4);
-		Calculadora calculadora=new Calculadora(a,b);
+		Calculadora calculadora=new Calculadora();
 		switch (opcion) {
 		case 1:
-			calculadora.sumar();
+			resultado=calculadora.sumar(a,b);
 			break;
 		case 2:
-			calculadora.restar();
+			resultado=calculadora.restar(a,b);
 			break;
 		case 3:
-			calculadora.multiplicar( );
+			resultado=calculadora.multiplicar(a,b);
 		break;
 		case 4:
-		calculadora.dividir();
+		resultado=calculadora.dividir(a,b);
 			break;
 		default:
 			break;
